@@ -1,0 +1,64 @@
+java 16.02.26
+DAY 1
+....
+.......
+variables-to hold value address.........
+without aplhates we can create variable
+number cant defined as first in the variable declaration..
+1)static-inside/ouside method
+2)Instance-outside mehod
+3)local-inside method
+......
+by class only we can access the static classes outside the class
+by inside the classes it is not needed..............
+instance is accessed using object
+instance is having default value
+local doesn't contain default value
+..............................................
+class Car {
+    // 1. Instance Variable (Each car has a unique color)
+    String color;
+
+    // 2. Static Variable (All cars share this)
+    static int numberOfWheels = 4;
+
+    void setCarDetails(String c) {
+        // 3. Local Variable (Only exists inside this method)
+        String tempColor = c;
+        this.color = tempColor;
+........................
+data types
+primitive-int,float,byte,short,long,double,char,boolean           |    |     |    |    |     |      |     |
+           4     4     1    2   8     8      2     1 bit
+
+non primitive -arrays,strings,class,object
+....
+next- only one word(outo enter butoon press)
+next line- it will take infinte data 
+.......
+......
+DAY 2
+....
+binary to number conversion 
+0010 - 2
+1101- (-3)
+.............
+right shift
+left shift
+.........
+| Feature       | **Logical Operators**       | **Bitwise Operators**                  |                 |        |                         |
+| ------------- | --------------------------- | -------------------------------------- | --------------- | ------ | ----------------------- |
+| Operators     | `&&` (AND), `               |                                        | `(OR),`!` (NOT) | `&`, ` | `, `^`, `~`, `<<`, `>>` |
+| Works on      | **Boolean values**          | **Binary bits of integers**            |                 |        |                         |
+| Result        | `true` or `false`           | Integer result                         |                 |        |                         |
+| Short-circuit | ✅ Yes (`&&`, `              |                                        | `)              | ❌ No   |                         |
+| Usage         | Conditions, decision making | Low-level operations, bit manipulation |                 |        |                         |
+...............
+conditions
+if,else,else if,switch,
+
+
+
+
+
+
