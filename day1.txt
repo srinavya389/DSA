@@ -56,7 +56,12 @@ left shift
 ...............
 conditions
 if,else,else if,switch,
+......
+Loops
 
+do while 
+for loop- only once it execute,for only for loop we can run without condition
+while loop-for while loop without condtion we cant run
 
 
 
