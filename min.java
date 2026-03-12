@@ -1,21 +1,20 @@
-class min {
+import java.util.Scanner;
+public class min {
+    
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int arr[];
+        arr=new int[4];
+        arr[0]=30;
 
-    static int findMin(int[] arr) {
-        int min = arr[0];
-
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] < min) {
-                min = arr[i];
-            }
+        byte new_arr[] = {11,0,-40,51,-40,32,-58,85};
+        //min value
+        int min=new_arr[0];
+        for(int i=0;i<new_arr.length;i++) {
+            if(min>new_arr[i])
+                min=new_arr[i];
         }
-        return min;
-    }
+        System.out.println(min);
 
-    public static void main(String[] args) {
-
-        int arr[] = {30, 11, 31, 40};
-
-        int result = findMin(arr);
-        System.out.println("Minimum value = " + result);
     }
 }
