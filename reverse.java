@@ -1,19 +1,35 @@
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class reverse {
 
+    // Function to reverse the character array
+    public static void reverseString(char[] s) {
+
+        int left = 0;
+        int right = s.length - 1;
+
+        while (left < right) {
+
+            // Swap characters
+            char temp = s[left];
+            s[left] = s[right];
+            s[right] = temp;
+
+            left++;
+            right--;
+        }
+    }
+
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter text: ");
-        String str = sc.nextLine();
+        // Example 1
+        char[] s1 = {'h','e','l','l','o'};
+        reverseString(s1);
+        System.out.println("Reversed: " + Arrays.toString(s1));
 
-        String result = "";
-
-        for (int i = str.length() - 1; i >= 0; i--) {
-            result = result + str.charAt(i);
-        }
-
-        System.out.println("Reversed: " + result);
+        // Example 2
+        char[] s2 = {'H','a','n','n','a','h'};
+        reverseString(s2);
+        System.out.println("Reversed: " + Arrays.toString(s2));
     }
 }
