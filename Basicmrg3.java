@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 class Basicmrg3{
         void display(Basicmrg3 t){

@@ -17,7 +17,7 @@ class Car {
     }
 }
 
-public class Car1 {
+public class Car1{
     public static void main(String[] args) {
         // Sample Test Case 1
         Car car1 = new Car("Toyota", "Corolla", 2021);
