@@ -4,36 +4,22 @@ class Animal {
         System.out.println("Animal makes a sound");
     }
 }
-
-// Dog class inherits Animal
+// Derived class
 class Dog extends Animal {
     @Override
     void speak() {
         System.out.println("Dog barks");
     }
 }
-
-// Cat class inherits Animal
-class Cat extends Animal {
-    @Override
-    void speak() {
-        System.out.println("Cat meows");
-    }
-}
-
 // Main class
-public class Animal2 {
+public class Animal2{
     public static void main(String[] args) {
-        // Array of Animal type
-        Animal[] animals = new Animal[3];
-
-        animals[0] = new Dog();
-        animals[1] = new Cat();
-        animals[2] = new Animal();
-
-        // Polymorphic behavior
-        for (Animal a : animals) {
-            a.speak();
-        }
+        Animal a = new Animal();
+        Dog d = new Dog();
+        a.speak();   // calls Animal's speak()
+        d.speak();   // calls Dog's overridden speak()
+        // Polymorphism example
+        Animal ad = new Dog();
+        ad.speak();  // calls Dog's speak() at runtime
     }
 }

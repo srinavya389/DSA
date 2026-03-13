@@ -1,5 +1,3 @@
-
-
 class Laptop {
     int amount = 50000;
     String name = "lenovo";
@@ -14,15 +12,15 @@ class Laptop {
     }
 }
 
-class Dell1 extends Laptop {
-    Dell1() {
+class Dell extends Laptop {
+    Dell() {
         System.out.println("dell");
     }
 }
 
 public class LaptopDemo {
     public static void main(String args[]) {
-        Dell1 obj = new Dell1();
+        Dell obj = new Dell();
 
         System.out.println(obj.name);
         System.out.println(obj.amount);
